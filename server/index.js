@@ -2,6 +2,27 @@
 const fs = require("fs");
 const express = require("express");
 
+const  app = express();
+const port = 4000
+
+
+function handleFirstRequest(req,res){
+    res.send('Hello World!')
+}
+
+app.get('/',handleFirstRequest)
+
+
+function started(){
+    console.log(`\n\t Example app listening on port ${port}`);
+}
+
+app.listen(port, started)
+    
+
+
+
+
 function callbackFn(err,data){
     console.log(data);
 }
