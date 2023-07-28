@@ -1,4 +1,16 @@
 
+const fs = require("fs");
+
+
+function callbackFn(err,data){
+    console.log(data);
+}
+
+
+fs.readFile("a.txt","utf-8",callbackFn);
+
+
+
 function Sum(counter){
     var sum=0;
     for(i=0; i<=counter ; i++){
