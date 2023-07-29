@@ -1,7 +1,6 @@
 const fs = require('fs')
 const express = require('express')
-const port = 3000;
-
+const port = process.env.PORT || 4000
 const app = express();
 app.get("/route1",fn);
 
