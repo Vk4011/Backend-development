@@ -1,6 +1,5 @@
 const fs = require('fs')
 const express = require('express');
-const { create } = require('domain');
 const port = process.env.PORT || 9000
 const app = express();
 app.get("/route1",fn);
@@ -9,7 +8,8 @@ app.post("/user",fn)
 
 function middlewar1(req,res,next){
     console.log("from inside middleware"+req.headers.n);
-    next();
+    res.send("Error from inside middleware");
+    // next();
 }
 
 app.use(middlewar1)
