@@ -3,4 +3,4 @@ const add = (a,b) => {
     return a+b;
 }
 
-module.export = add;
+module.exports = add;
