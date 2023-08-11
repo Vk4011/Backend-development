@@ -10,3 +10,6 @@ function vikram(greetFn){
 }
 
 vikram(greet);
+
+
+//Function passing arguments to another function is called call back functions
