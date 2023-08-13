@@ -6,7 +6,10 @@ class PizzaShop{
         this.orderNumber++;
     }
     displayOrderNumber(){
-        console.log(`current order number: ${this.orderNumber} `);
-        
+        console.log("\n\t",`current order number: ${this.orderNumber} `);
+
     }
 }
+
+module.exports = PizzaShop;
+
