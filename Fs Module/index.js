@@ -14,3 +14,6 @@ fs.readFile("./file.txt","utf-8",(error,data)=>{
     }
 })
 console.log("Third")
+
+fs.writeFileSync("./greet.txt","Hello world....!");
+
