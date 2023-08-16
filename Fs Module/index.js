@@ -17,7 +17,7 @@ console.log("Third")
 
 fs.writeFileSync("./greet.txt"," Hello Mark 42..!");
 
-fs.writeFileSync("./greet.txt"," Hello Tony Stank....!",(err)=>{
+fs.writeFile("./greet.txt"," Hello Tony Stank....!",{flag:"a"},(err)=>{
     if(err){
         console.log(err);
     }else{
