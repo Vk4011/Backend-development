@@ -9,13 +9,13 @@ const server =  http.createServer((req,res)=>{
         lastName : "Hulk",
     }
     
-    res.writeHead(200,{"Content-Type":"text/plain"});
-    res.end(superHero);
+    res.writeHead(200,{"Content-Type":"application"});
+    res.end(JSON.stringify(superHero));
 
 
 })
 
 server.listen(8080,()=>{
-    console.log('Server runnig on port 3000')
+    console.log('Server runnig on port 8080')
 });
 
