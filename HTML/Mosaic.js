@@ -6,8 +6,8 @@ const server = http.createServer((req,res)=>{
         firstName : "Vikram",
         lastName : "Ram",
     }
-    res.writeHead(200,{"Content-Type":"text/plain"});
-    res.end("Hello world");
+    res.writeHead(200,{"Content-Type":"text/html"});
+    res.end("<h1>Hello world</h1>");
 })
 
 server.listen(5000,()=>{
