@@ -1,7 +1,8 @@
 const https = require("node:https");
 
 
-const MAX_CALLS =2;
+const MAX_CALLS =2
+;
 
 const start = Date.now();
 for(let  i = 0 ; i<MAX_CALLS;i++){
@@ -14,3 +15,5 @@ for(let  i = 0 ; i<MAX_CALLS;i++){
         })
         .end()
 }
+
+
