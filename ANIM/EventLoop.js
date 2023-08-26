@@ -1,4 +1,4 @@
-const fs=require("node:fs");
+const fs=require("fs");
 
 fs.readFile(__filename,()=>{
     console.log("\n\t This is readFile 1\n");
