@@ -1,0 +1,13 @@
+
+{
+    "name": "greet-code",
+    "version": "1.0.0",
+    "description": "Codebyvikram greeting package",
+    "keywords": [
+        "codebyvikram",
+        "greet"
+
+    ],
+    "main": "index.js"
+
+}
