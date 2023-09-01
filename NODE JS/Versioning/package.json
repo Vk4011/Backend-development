@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-   , "vikram":"nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vikram": "nodemon index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "greet-codevolution": "^1.0.0"
+  }
 }
