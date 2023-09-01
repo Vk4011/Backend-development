@@ -1,0 +1,17 @@
+{
+  "name": "building-cli_by_vikram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "r":"nodemon server.js"
+  },
+  "bin":{
+    "code-vikram":"server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
