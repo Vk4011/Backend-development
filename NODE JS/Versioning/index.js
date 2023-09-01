@@ -12,4 +12,13 @@ let r=sum(89,100);
 console.log("\n\t it will restart js file automatically  sum :"+r);
 
 
+console.log("\n\t Npm Scripts ")
 
+//npm scripts are executed using the command npm run <SCRIPT_NAME>
+
+
+//"scripts:"{
+// "start":"nodemon index.js"
+// }
+
+//npm run vikram
