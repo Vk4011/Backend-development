@@ -1,7 +1,8 @@
 
 console.log("\n\t CLI  Options \N");
 
-
+const yargs = require("yargs");
+const {argv} = yargs(process.argv)
 
 const printFiveMoves = async (pokemonName)=>{
     const response = await fetch(
@@ -12,5 +13,5 @@ const printFiveMoves = async (pokemonName)=>{
     console.log(moves.slice(0,5));
 };
 
-printFiveMoves("charmander");
+printFiveMoves(argv.pokemon);
 console.log("\n\t npm i yargs is used to convert options in key value pairs")

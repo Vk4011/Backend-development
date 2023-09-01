@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "p": "nodemon index.js"
   },
+  "bin":{
+    "v-p":"node index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
