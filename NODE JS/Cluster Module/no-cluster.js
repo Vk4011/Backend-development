@@ -20,3 +20,19 @@ server.listen(8000,()=>console.log("\n\t Server is running on port 8000"));
 //Cluster Module contd.
 //The cluster module enables the creation of child processes (also called workers) that run simultaneously
 //All created workers share the same port 
+
+
+
+
+//npm i -g pm2
+
+
+
+////pm2 start no-cluster.js -i 0
+
+
+
+
+//pm2 stop nocluster.js
+
+//

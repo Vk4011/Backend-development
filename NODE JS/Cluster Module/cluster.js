@@ -1,5 +1,10 @@
 
-const cluster = require("node:cluster")
+const cluster = require("node:cluster");
+const http = require("node:http");
+const OS = require("node:os");
+
+
+console.log(OS.cpus().length);
 
 if(cluster.isMaster){
     console.log(`Master process ${process.pid} is runnig`);
@@ -24,3 +29,11 @@ server.listen(8000,()=>console.log("\n\t Server is running on port 8000"));
 
 //if you create more workers than there are logical cores on the computer it can cause an overhead as the system will have to schedule all the created 
 // Workers with fewer number of cores
+
+
+
+
+//npm i -g pm2
+
+
+//pm2 stop nocluster.js
