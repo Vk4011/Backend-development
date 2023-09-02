@@ -3,6 +3,8 @@
 //The worker_threads module enables the use of threads that execute js in parllel 
 
 const http = require("http");
+const { Worker} =require ("node:worker_threads");
+
 
 const server = http.createServer((req,res)=>{
     if(req.url === "/"){
@@ -11,6 +13,7 @@ const server = http.createServer((req,res)=>{
         });
         res.end("Home page");
     }else if(req.url === "/slow-page"){
+        const worker = new Worker("./worker-thread.js")
         let j=0;
         for(let i=0;i<600000000;i++){
             j++;
