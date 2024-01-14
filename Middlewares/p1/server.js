@@ -28,5 +28,17 @@ app.get("/ride",(req,res)=>{
     
 })
 
+app.get("/ride2",(req,res)=>{
+    if(isOldEnough(req.query.age)){
+        res.json({
+            msg: " You haved sucessfully riden the ride 2",
+        })
+    }else{
+        res.status(411).json({
+            msg: "Sorry you are not of age yet ",
+        })
+    }
+})
+
 const port = 4040;
 app.listen(port,()=>console.log(`\n\t server is running on the port : ${port}`))
